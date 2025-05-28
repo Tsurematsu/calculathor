@@ -1,4 +1,5 @@
 // @ts-nocheck
+import config from './app/config.js';
 const optionGraph = document.querySelector('.option-graph');
 const optionTable = document.querySelector('.option-table');
 const tabGraph = document.querySelector('.tab-graph');
@@ -9,6 +10,7 @@ optionGraph.addEventListener('click', () => {
     optionTable.classList.remove('active-option');
     tabGraph.classList.add('active-tab');
     tabTable.classList.remove('active-tab');
+    config.render = true;
 });
 
 optionTable.addEventListener('click', () => {
@@ -16,4 +18,5 @@ optionTable.addEventListener('click', () => {
     optionGraph.classList.remove('active-option');
     tabGraph.classList.remove('active-tab');
     tabTable.classList.add('active-tab');
+    config.render = false;
 });

@@ -11,7 +11,7 @@ function main() {
     }
     config.canvas = canvas;
     config.ctx = ctx;
-
+    config.render = true;
     setInterval(() => { render() }, 1000 / 60); // 60 FPS
     // cuando se precione el click, se vuelve a renderizar
     const cursorSabe = {
