@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Calculadora</title>
+    <link rel="stylesheet" href="./app.css">
+    <script defer type="module" src="./app.js"></script>
+</head>
+
+<body style="margin: 0px; padding: 0px; overflow: hidden;">
+    <div class="app-page">
+        <div class="align-center">
+            <div class="panel">
+                <div class="left-tools">
+                    <div class="target">
+                        <button>Volver</button>
+                        <span>Funcion f(x)</span>
+                    </div>
+                    <div class="target">
+                        <span>Funcion f(x)</span>
+                        <input type="text">
+                    </div>
+                    <div class="target buttons-math">
+                        <button>Sen()</button>
+                        <button>Cos()</button>
+                        <button>Tan()</button>
+                        <button>log()</button>
+                        <button>Ln()</button>
+                    </div>
+                    <div class="target">
+                        <span>limite inferior (a)</span>
+                        <input type="text">
+                    </div>
+                    <div class="target">
+                        <span>limite superior (b)</span>
+                        <input type="text">
+                    </div>
+                    <div class="target">
+                        <span>Metodo seleccionado</span>
+                        <select name="" id="">
+                            <option value="">Metodo x</option>
+                        </select>
+                    </div>
+                    <div class="target">
+                        <span>title</span>
+                        <p>info</p>
+                    </div>
+                </div>
+                <div class="right-results">
+                    <div class="tabs">
+                        <div class="option-tab"><span>Grafica</span></div>
+                        <div class="option-tab"><span>Tabla</span></div>
+                    </div>
+                    <div style="display: none;" class="Result-graph">
+                        <canvas class="graph-canvas"></canvas>
+                    </div>
+                    <div style="display: block;" class="Result-table">
+                        <table class="table-result">
+                            <thead>
+                                <tr>
+                                    <th>Iteración</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
