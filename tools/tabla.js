@@ -1,5 +1,5 @@
 // @ts-nocheck
-import config from "../app/config";
+import config from "../app/config.js";
 
 export default function tabla(
     arrayXY = [[0, 0], [1, 1], [2, 2]],
