@@ -8,6 +8,14 @@
     <title>App Calculadora</title>
     <link rel="stylesheet" href="./app.css">
     <script defer type="module" src="./app.js"></script>
+    <script defer src="./app-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=WDXL+Lubrifont+TC&display=swap"
+        rel="stylesheet">
 </head>
 
 <body style="margin: 0px; padding: 0px; overflow: hidden;">
@@ -49,15 +57,17 @@
                         <p>info</p>
                     </div>
                 </div>
+
                 <div class="right-results">
                     <div class="tabs">
-                        <div class="option-tab"><span>Grafica</span></div>
-                        <div class="option-tab"><span>Tabla</span></div>
+                        <div class="option-graph option-tab active-option"><span>Grafica</span></div>
+                        <div class="option-table option-tab"><span>Tabla</span></div>
                     </div>
-                    <div style="display: none;" class="Result-graph">
+
+                    <div class="tab Result-graph tab-graph active-tab">
                         <canvas class="graph-canvas"></canvas>
                     </div>
-                    <div style="display: block;" class="Result-table">
+                    <div class="tab Result-table tab-table">
                         <table class="table-result">
                             <thead>
                                 <tr>

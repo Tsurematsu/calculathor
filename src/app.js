@@ -3,7 +3,6 @@ import config from "./app/config.js";
 import render from "./app/render.js";
 main();
 function main() {
-    console.log("Hello, World!");
     const canvas = document.querySelector(".graph-canvas");
     const ctx = canvas.getContext("2d");
     if (!ctx) {

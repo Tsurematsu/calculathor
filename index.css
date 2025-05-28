@@ -1,3 +1,9 @@
+ * {
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
  .home-page {
      background-color: #353535;
      height: 100vh;
